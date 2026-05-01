@@ -14,8 +14,10 @@ print(array_sum([10,20,30,40]))
 arr = [1, 2, 3, 4, 5]
 print("Sum =", array_sum(arr))
 '''
+
+
 #recursive
-def array_sum_recursive(nums,i):
+'''def array_sum_recursive(nums,i):
     if i==-1:
         return 0
     return nums[i]+array_sum_recursion(nums,i-1)
@@ -25,4 +27,28 @@ def array_sum_recursion1(nums):
     if len(nums)==0:
         return 0
     return nums[-1]+array_sum_recursion1(nums[:-1])
-print(array_sum_recursion([10,20,30,40]))
+print(array_sum_recursion([10,20,30,40]))'''
+
+
+'''#reverse array using recursion
+def reverse_array(nums,i,j):
+    if i>=j:
+        return nums 
+    nums[i],nums[j]=nums[j],nums[i]
+    return reverse_array(nums,i+1,j-1)
+print(reverse_array([1,2,3,4,5],0,4))'''
+
+
+'''#reverse string using recursion
+def reverse_string(st):
+    if st=="":
+        return ""
+    return st[-1]+reverse_string(st[:-1])
+print(reverse_string("abc"))'''
+
+'''
+def is_palindrome(st):
+    return st==reverse_string(st):
+print(is_palindrome("abc"))
+    
+'''
